@@ -34,10 +34,13 @@ Scoring, flags and the price index are SQL views in `supabase/migrations/0001_in
 3. Deploy. Later, add trustani.com under **Settings → Domains**.
 
 ### 3. Seed the Harare leads
+In the Supabase SQL Editor, run `supabase/migrations/0003_harare_leads.sql` (46 sellers, safe to re-run).
+
+For future lead files you can use the script instead:
 ```bash
 cp .env.example .env.local   # fill in URL + service_role key
 npm install
-npm run import:leads -- data/leads/harare-aggregates.json
+npm run import:leads -- data/leads/<file>.json
 ```
 
 ### 4. Make yourself a moderator
