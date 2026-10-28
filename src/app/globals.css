@@ -135,6 +135,31 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 .err { color: var(--bad); font-size: 14px; }
 .ok { color: var(--good); font-size: 14px; }
 
+/* Product-first home */
+.tabs { display: flex; gap: 6px; overflow-x: auto; padding: 4px 0 2px; scrollbar-width: none; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex: none; text-decoration: none; font-family: var(--f-display); font-weight: 700; font-size: 18px; letter-spacing: .02em; text-transform: uppercase; padding: 8px 14px; border: 2px solid var(--line); border-radius: 6px; background: var(--surface); }
+.tab:hover { border-color: var(--fg); }
+.tab.on { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.fairbar { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between; padding: 14px 16px; background: var(--accent-soft); border-radius: 8px; margin-bottom: 18px; }
+.fairnum b { font-size: 28px; }
+.section-title { font-size: 22px; text-transform: uppercase; letter-spacing: .03em; margin: 8px 0 10px; }
+ol.cards { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.card { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+.card:hover { border-color: var(--fg); }
+.card-link { display: flex; flex-direction: column; gap: 8px; padding: 14px 16px; text-decoration: none; }
+.card-top { display: flex; gap: 12px; align-items: center; }
+.card-top .rank { width: 30px; flex: none; }
+.card .name { font-weight: 600; font-size: 17px; overflow-wrap: anywhere; }
+.card-price { text-align: right; display: flex; flex-direction: column; align-items: flex-end; flex: none; }
+.card-price b { font-size: 20px; }
+.card-price b small { font-size: 12px; font-weight: 500; color: var(--muted); }
+.card-mid { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; padding-left: 42px; }
+.scorepill { font-size: 13px; color: var(--muted); padding: 1px 8px; border-radius: 999px; background: var(--sunk); }
+.scorepill b { color: var(--fg); font-size: 15px; }
+.snippet { margin: 0 0 0 42px; padding: 8px 12px; border-left: 3px solid var(--accent); background: var(--sunk); border-radius: 0 6px 6px 0; font-size: 14px; max-width: 70ch; overflow-wrap: anywhere; }
+@media (max-width: 520px) { .card-mid { padding-left: 0; } .snippet { margin-left: 0; } }
+
 .empty { padding: 40px 24px; text-align: center; color: var(--muted); }
 .empty h3 { font-size: 24px; color: var(--fg); margin-bottom: 6px; }
 
